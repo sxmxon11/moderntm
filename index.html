@@ -1,136 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Modern Glass Website</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern™</title>
+    <style>
+        /* Body mit Hintergrundbild und Blur Effekt */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('https://picsum.photos/1920/1080') no-repeat center center/cover;
+        }
 
-    html {
-      scroll-behavior: smooth;
-    }
+        /* Blur Glass Container */
+        .glass {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 50px 100px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        }
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #121212, #1a1a1a);
-      color: white;
-    }
+        /* Text Modern™ */
+        .glass h1 {
+            font-size: 4rem;
+            margin: 0;
+        }
 
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      backdrop-filter: blur(20px);
-      background: rgba(255, 255, 255, 0.05);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      z-index: 1000;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
+        .glass h1 sup {
+            font-size: 1rem;
+            vertical-align: super;
+        }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: 500;
-      transition: opacity 0.2s ease;
-    }
+        /* Navigation */
+        nav {
+            margin-top: 30px;
+        }
 
-    nav a:hover {
-      opacity: 0.7;
-    }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
 
-    section {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 4rem 2rem;
-    }
-
-    .glass {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border-radius: 20px;
-      padding: 4rem 2rem;
-      max-width: 800px;
-      width: 100%;
-      text-align: center;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
-    }
-
-    h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-      background: linear-gradient(90deg, #00d2ff, #3a47d5);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    p {
-      font-size: 1.2rem;
-      opacity: 0.8;
-      margin-bottom: 2rem;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 1rem 2rem;
-      background: linear-gradient(90deg, #3a47d5, #00d2ff);
-      color: white;
-      border: none;
-      border-radius: 12px;
-      font-size: 1rem;
-      cursor: pointer;
-      text-decoration: none;
-      transition: transform 0.2s ease;
-    }
-
-    .btn:hover {
-      transform: scale(1.05);
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
-
-      .btn {
-        width: 100%;
-      }
-    }
-  </style>
+        nav a:hover {
+            color: #ffcc00;
+        }
+    </style>
 </head>
 <body>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#download">Download</a>
-  </nav>
-
-  <section id="home">
     <div class="glass">
-      <h1>🏠 Welcome Home</h1>
-      <p>This is the modern glass-blur interface you've been waiting for.</p>
+        <h1>Modern<sup>™</sup></h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+        </nav>
     </div>
-  </section>
-
-  <section id="download">
-    <div class="glass">
-      <h1>📥 Get the modern task manager now!</h1>
-      <a class="btn" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Download</a>
-    </div>
-  </section>
 </body>
 </html>
