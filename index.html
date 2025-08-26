@@ -16,7 +16,7 @@
         flex-direction: column;
     }
 
-    /* Navigation Blur-Leiste oben */
+    /* navigation home und about */
     nav {
         position: fixed;
         top: 20px;
@@ -50,7 +50,7 @@
         color: #ffcc00;
     }
 
-    /* Hauptinhalt */
+    /* haupt ding */
     .glass {
         background: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(10px);
@@ -102,7 +102,7 @@
     <div class="glass">
         <h1>Modern<sup>™</sup></h1>
         <div class="content" id="pageContent">
-            Willkommen auf der Startseite!
+            Welcome to the Start Page!
         </div>
     </div>
 
@@ -110,11 +110,12 @@
     function showPage(page) {
         const content = document.getElementById('pageContent');
         if(page === 'home') {
-            content.innerHTML = 'Willkommen auf der Startseite!';
+            content.innerHTML = 'Welcome to the Start Page!';
         } else if(page === 'about') {
-            content.innerHTML = `Idk what to say. My name is Simeon. I made this website just for fun, hope u like it and when you have any ideas, write it to <a href="mailto:your-email@example.com" style="color:#ffcc00;">[this]</a> email.`;
+            content.innerHTML = `Idk what to say. My name is Simeon. I made this website just for fun, i hope you like it. When you have any ideas, write it to <a href="mailto:simeon.rohrmann@web.de" style="color:#000000;">this</a> email.`;
         }
     }
 </script>
 </body>
 </html>
+
